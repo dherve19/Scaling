@@ -8,7 +8,7 @@ $hpaName = "sample-app-autoscaler"
 $cpuThreshold = 50
 $minReplicas = 2
 $maxReplicas = 5
-az account set --subscription "9cd66aea-edf8-4892-affb-476e5bffd732"
+az account set --subscription "9cd66aea-edf8-4892-affb-476e5bffd732" #replace with the suscription
 # Add Horizontal Pod Autoscaler
 Write-Host "Configuring Horizontal Pod Autoscaler for deployment: $deploymentName..."
 $hpaManifest = @"
